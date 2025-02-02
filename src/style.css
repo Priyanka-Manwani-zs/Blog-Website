@@ -428,7 +428,7 @@ html {
   height: 50px;
   width: 180px;
   position: absolute;
-  bottom: -250%;
+  bottom: -270%;
   left: 45%;
   cursor: pointer;
 }
@@ -445,6 +445,9 @@ html {
 }
 
 @media screen and (max-width: 480px) {
+  .description {
+    height: auto;
+  }
   .parallax-container {
     width: 120vw;
   }
@@ -523,7 +526,7 @@ html {
 
   .blog-button {
     width: 150px;
-    bottom: -260%;
+    bottom: -250%;
     left: 60%;
     transform: translateX(-50%);
   }
@@ -540,6 +543,7 @@ html {
     font-size: 2em;
   }
   .sign {
-    left: 30%;
+    top: 120%;
+    left: 60%;
   }
 }
