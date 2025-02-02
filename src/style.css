@@ -526,7 +526,7 @@ html {
 
   .blog-button {
     width: 150px;
-    bottom: -250%;
+    bottom: -260%;
     left: 60%;
     transform: translateX(-50%);
   }
@@ -543,7 +543,7 @@ html {
     font-size: 2em;
   }
   .sign {
-    top: 150%;
+    top: 160%;
     left: 60%;
   }
 }
