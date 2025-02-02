@@ -526,7 +526,7 @@ html {
 
   .blog-button {
     width: 150px;
-    bottom: -260%;
+    bottom: -280%;
     left: 60%;
     transform: translateX(-50%);
   }
