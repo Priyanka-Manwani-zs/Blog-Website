@@ -1,0 +1,545 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+.parallax-container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background: #0a2a43;
+  min-height: 2000px;
+}
+
+.parallax-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #0a2a43, transparent);
+  z-index: 10000;
+}
+
+.parallax-section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 10000;
+  mix-blend-mode: color;
+}
+
+.parallax-section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.parallax-text {
+  position: relative;
+  color: #fff;
+  left: -19%;
+  font-size: 10em;
+  z-index: 1;
+}
+
+.parallax-road {
+  z-index: 2;
+}
+.Parallax-box-text {
+  position: relative;
+  top: -20%;
+  left: 30%;
+  color: #fff;
+  font-size: 4em;
+  padding-right: 100px;
+  z-index: 1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+.box-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  top: 10%;
+
+  border: white;
+}
+
+.box {
+  height: 500px;
+  width: 500px;
+  border: 3px solid rgb(71, 154, 184);
+  position: absolute;
+  top: 10%;
+  left: 35%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  box-shadow: 25px 25px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  background: #021a2c;
+  z-index: 2px;
+}
+
+.hidden-text {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  font-size: 24px;
+  font-weight: bold;
+
+  color: #fff;
+  font-size: 5em;
+  z-index: 1;
+}
+
+.visible {
+  opacity: 1;
+}
+.box-text {
+  color: #ffffff;
+  font-size: 4em;
+}
+
+.typing-animation {
+  color: #ffffff;
+  font-size: 4em;
+
+  z-index: 1;
+  display: inline-block;
+  font-size: 4em;
+  font-family: "IBM Plex Mono", monospace;
+  color: white;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 4px solid white;
+  width: 0;
+  animation: typing 3s steps(12) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.next-box,
+.next-box1 {
+  height: 500px;
+  width: 500px;
+  border: 3px solid rgb(71, 154, 184);
+
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  box-shadow: 25px 25px 15px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  background: #021a2c;
+}
+
+.next-box1 {
+  top: 1500px;
+  left: 38%;
+}
+
+.description {
+  height: 700px;
+  width: 700px;
+  align-items: center;
+  border-radius: 40px;
+  box-shadow: 25px 25px 15px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  left: 30%;
+  border: 3px solid rgb(71, 154, 184);
+  font-size: 30px;
+  padding: 30px 30px 30px 30px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.4rem;
+  color: white;
+  background: #021a2c;
+
+  transition: transform 1s ease-in-out;
+
+  white-space: pre-wrap;
+  animation: fadeIn 0.5s ease-in-out;
+  overflow: auto;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.maindiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(16, 13, 37, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.maindiv.exit {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.description.exit {
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+.description h3 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 20px;
+  color: rgb(71, 154, 184);
+  position: absolute;
+
+  left: 60%;
+
+  padding-bottom: 40px;
+}
+
+.sign {
+  width: 200px;
+  height: 70px;
+  position: absolute;
+
+  left: 70%;
+  top: 160%;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+.description :hover {
+  translate: scale(1.2);
+}
+/* .description img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+  z-index: -2;
+} */
+
+.comment-section {
+  width: 100%;
+
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 320%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.like-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  z-index: 2;
+}
+
+.like-btn:hover {
+  transform: scale(1.2);
+}
+
+.comment-box {
+  width: 50%;
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 40%;
+}
+.comment-box input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid rgb(71, 154, 184);
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.comment-btn {
+  padding: 10px 15px;
+  border: none;
+  background: rgb(71, 154, 184);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.comment-btn:hover {
+  background: rgb(50, 120, 150);
+}
+
+.comments-list {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.comment {
+  height: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 5px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
+  color: white;
+  word-wrap: break-word;
+}
+.background-gif {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+.next-box1 {
+  position: relative;
+  width: 400px;
+
+  height: 300px;
+  overflow: hidden;
+}
+
+.gif-box1 {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  left: -10%;
+}
+.gif-box2 {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  right: -13%;
+  rotate: 0 1 0 180deg;
+}
+.arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 35%;
+  bottom: -50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 300px;
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+.arrow img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.blog-button {
+  height: 50px;
+  width: 180px;
+  position: absolute;
+  bottom: -210%;
+  left: 45%;
+  cursor: pointer;
+}
+
+.blog-button:hover {
+  background: rgb(71, 154, 184);
+}
+.demo {
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .parallax-container {
+    width: 120vw;
+  }
+  .parallax-text {
+    font-size: 3em;
+    left: -25%;
+    top: 50%;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .Parallax-box-text {
+    font-size: 3em;
+    left: 25%;
+    top: -20%;
+    padding-right: 0;
+    text-align: center;
+    z-index: 2;
+  }
+
+  .box-container {
+    flex-direction: column;
+    height: auto;
+    top: 20%;
+  }
+
+  .box,
+  .next-box,
+  .next-box1 {
+    width: 75%;
+    height: auto;
+    top: auto;
+    left: 7%;
+    padding: 20px;
+  }
+
+  .hidden-text {
+    font-size: 3em;
+  }
+  .description {
+    width: 90%;
+    height: auto;
+    left: 5%;
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  .comment-section {
+    top: 360%;
+    width: 130vw;
+  }
+
+  .comment-box {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15%;
+  }
+  .like-btn {
+    margin-left: 15%;
+  }
+
+  .maindiv {
+    width: 120vw;
+    height: 120vh;
+  }
+  .description {
+    width: 90vw;
+    margin-left: 3%;
+    height: 100vh;
+  }
+
+  .comment-box input {
+    width: 100%;
+  }
+
+  .blog-button {
+    width: 150px;
+    bottom: -260%;
+    left: 60%;
+    transform: translateX(-50%);
+  }
+
+  .arrow {
+    width: 300px;
+    height: 150px;
+    left: 15%;
+    top: 20vh;
+    transform: translateX(-50%);
+  }
+
+  .typing-animation {
+    font-size: 2em;
+  }
+  .sign {
+    left: 30%;
+  }
+}
