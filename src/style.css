@@ -294,15 +294,15 @@ html {
 
 .comment-section {
   width: 100%;
-
+  margin: 50px auto;
   padding: 20px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
   position: absolute;
-  top: 320%;
+  top: 370%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); /* Centers it properly */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -428,7 +428,7 @@ html {
   height: 50px;
   width: 180px;
   position: absolute;
-  bottom: -210%;
+  bottom: -270%;
   left: 45%;
   cursor: pointer;
 }
