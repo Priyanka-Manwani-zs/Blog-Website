@@ -430,7 +430,7 @@ html {
   height: 50px;
   width: 180px;
   position: absolute;
-  bottom: -250%;
+  bottom: -230%;
   left: 45%;
   cursor: pointer;
 }
