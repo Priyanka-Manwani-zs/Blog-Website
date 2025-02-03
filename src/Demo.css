@@ -192,3 +192,58 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
+
+/* Tablet Screen Responsive Styles */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .demo-section {
+    padding: 3rem 1.5rem; /* Adjust padding for tablets */
+    height: auto; /* Allow height to adjust based on content */
+    top: 700px; /* Adjust positioning */
+    width: 500px; /* Adjust width for tablets */
+    border-radius: 30px; /* Slightly reduce border radius */
+    left: -30%;
+  }
+
+  .demo-section h2 {
+    font-size: 2.2rem; /* Adjust font size for tablets */
+    margin-bottom: 1.5rem; /* Adjust margin for tablets */
+  }
+
+  .demo-container {
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(250px, 1fr)
+    ); /* Adjust grid columns for tablets */
+    gap: 1.5rem; /* Adjust gap between cards */
+    max-width: 100%; /* Allow container to take full width */
+  }
+
+  .demo-card {
+    padding: 1.5rem; /* Adjust padding for tablets */
+    border-radius: 8px; /* Slightly reduce border radius */
+  }
+
+  .demo-card h3 {
+    font-size: 1.4rem; /* Adjust font size for tablets */
+  }
+
+  .result {
+    font-size: 1.1rem; /* Adjust font size for tablets */
+    padding: 0.9rem; /* Adjust padding for tablets */
+  }
+
+  .demo-card button {
+    padding: 0.8rem; /* Adjust padding for tablets */
+    font-size: 0.95rem; /* Adjust font size for tablets */
+    border-radius: 6px; /* Slightly reduce border radius */
+  }
+
+  .note {
+    font-size: 0.85rem; /* Adjust font size for tablets */
+  }
+
+  .result {
+    margin-left: 0; /* Reset margin for tablets */
+    width: 100%; /* Ensure full width */
+  }
+}

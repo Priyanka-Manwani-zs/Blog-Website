@@ -207,6 +207,14 @@ html {
   overflow: auto;
   text-align: left;
 }
+
+.closeIcon {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.box p {
+  color: rgb(50, 120, 150);
+}
 .demo {
   position: absolute;
   bottom: -140%;
@@ -492,7 +500,7 @@ html {
   }
   .description {
     width: 90%;
-    height: auto;
+    height: 100%;
     left: 5%;
     font-size: 1rem;
     padding: 20px;
@@ -515,12 +523,12 @@ html {
 
   .maindiv {
     width: 120vw;
-    height: 120vh;
+    height: 100vh;
   }
   .description {
     width: 90vw;
 
-    height: 100vh;
+    height: 82vh;
   }
 
   .comment-box input {
@@ -548,7 +556,7 @@ html {
   }
   .sign {
     top: 180%;
-    left: 60%;
+    left: 54%;
   }
 
   /* 
@@ -560,4 +568,110 @@ html {
 
     z-index: 5;
   } */
+}
+
+/* Tablet Screen Responsive Styles */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .parallax-text {
+    font-size: 6em; /* Reduce font size for tablets */
+    left: -15%; /* Adjust positioning */
+    top: 50%;
+    text-align: center;
+  }
+
+  .Parallax-box-text {
+    font-size: 3em; /* Reduce font size for tablets */
+    left: 25%; /* Adjust positioning */
+    top: -20%;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .box-container {
+    flex-direction: column;
+    height: auto;
+    top: 20%;
+  }
+
+  .box,
+  .next-box,
+  .next-box1 {
+    width: 400px; /* Adjust width for tablets */
+    height: 400px; /* Adjust height for tablets */
+    margin-top: 60px;
+    left: 20%; /* Adjust positioning */
+    padding: 20px;
+    font-size: 0.8em; /* Adjust font size */
+  }
+
+  .hidden-text {
+    font-size: 4em; /* Adjust font size */
+  }
+
+  .description {
+    width: 80%; /* Adjust width for tablets */
+    height: 100%;
+    left: 10%; /* Adjust positioning */
+    font-size: 1.2rem; /* Adjust font size */
+    padding: 20px;
+  }
+
+  .comment-section {
+    top: 330%; /* Adjust positioning */
+    width: 90%; /* Adjust width for tablets */
+  }
+
+  .comment-box {
+    width: 80%; /* Adjust width for tablets */
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%; /* Adjust positioning */
+  }
+
+  .like-btn {
+    margin-left: 10%; /* Adjust positioning */
+  }
+
+  .maindiv {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .comment-box input {
+    width: 100%; /* Full width for input */
+  }
+
+  .blog-button {
+    width: 150px; /* Adjust width for tablets */
+    bottom: -230%; /* Adjust positioning */
+    left: 50%; /* Center the button */
+    transform: translateX(-50%);
+  }
+
+  .arrow {
+    width: 300px; /* Adjust width for tablets */
+    height: 150px; /* Adjust height for tablets */
+    left: 26%; /* Adjust positioning */
+    top: 47vh;
+    margin-top: 20px;
+    transform: translateX(-50%);
+  }
+
+  .typing-animation {
+    font-size: 3em; /* Adjust font size for tablets */
+  }
+
+  .sign {
+    top: 137%; /* Adjust positioning */
+    left: 50%; /* Adjust positioning */
+  }
+
+  .demo {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 13%;
+  }
 }

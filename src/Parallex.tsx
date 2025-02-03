@@ -148,7 +148,9 @@ const ParallaxEffect = () => {
             <h2 className="hidden-text" ref={hiddenTextRef}>
               Count=2;
             </h2>
+
             <h2 className="typing-animation">is Memoized!</h2>
+            <p>click here</p>
           </div>
 
           {visible && (
@@ -190,6 +192,9 @@ const ParallaxEffect = () => {
           onClick={handleClose}
         >
           <div className={`description ${isClosing ? "exit" : ""}`}>
+            <span onClick={handleClose} className="closeIcon">
+              X
+            </span>
             <p>
               The `useMemo` hook in React is a useful tool for speed
               optimization because it ensures that expensive computations are
