@@ -87,20 +87,18 @@ html {
   align-items: center;
   justify-content: center;
   position: relative;
-
-  top: 10%;
-
   border: white;
 }
 
 .box {
-  height: 500px;
   width: 500px;
+  height: 500px;
   border: 3px solid rgb(71, 154, 184);
   position: absolute;
-  top: 10%;
+  top: 40%;
   left: 35%;
-
+  /* top: 50%;
+  left: 50%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,7 +107,7 @@ html {
   box-shadow: 25px 25px 15px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   background: #021a2c;
-  z-index: 2px;
+  z-index: 2;
 }
 
 .hidden-text {
@@ -169,7 +167,7 @@ html {
   border: 3px solid rgb(71, 154, 184);
 
   position: absolute;
-  top: 10%;
+  top: 40%;
   left: 35%;
   display: flex;
   flex-direction: column;
@@ -193,7 +191,7 @@ html {
   border-radius: 40px;
   box-shadow: 25px 25px 15px rgba(0, 0, 0, 0.3);
   position: absolute;
-  left: 24%;
+  left: 30%;
   border: 3px solid rgb(71, 154, 184);
   font-size: 30px;
   padding: 30px 30px 30px 30px;
@@ -207,6 +205,11 @@ html {
   white-space: pre-wrap;
   animation: fadeIn 0.5s ease-in-out;
   overflow: auto;
+  text-align: left;
+}
+.demo {
+  position: absolute;
+  bottom: -140%;
 }
 
 @keyframes fadeIn {
@@ -252,6 +255,7 @@ html {
   font-size: 20px;
   color: rgb(71, 154, 184);
   position: absolute;
+  margin-top: 30px;
 
   left: 60%;
 
@@ -290,6 +294,7 @@ html {
 } */
 
 .comment-section {
+  height: 200px;
   width: 100%;
   margin: 50px auto;
   padding: 20px;
@@ -297,7 +302,7 @@ html {
   border-radius: 15px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
   position: absolute;
-  top: 370%;
+  top: 330%;
   left: 50%;
   transform: translateX(-50%); /* Centers it properly */
   display: flex;
@@ -397,9 +402,9 @@ html {
 }
 .arrow {
   position: absolute;
-  bottom: 20px;
+
   left: 35%;
-  bottom: -50%;
+  bottom: -80%;
   transform: translateX(-50%);
   width: 500px;
   height: 300px;
@@ -425,7 +430,7 @@ html {
   height: 50px;
   width: 180px;
   position: absolute;
-  bottom: -270%;
+  bottom: -220%;
   left: 45%;
   cursor: pointer;
 }
@@ -445,9 +450,7 @@ html {
   .description {
     height: auto;
   }
-  .parallax-container {
-    width: 120vw;
-  }
+
   .parallax-text {
     font-size: 3em;
     left: -25%;
@@ -474,11 +477,14 @@ html {
   .box,
   .next-box,
   .next-box1 {
-    width: 75%;
-    height: auto;
-    top: auto;
-    left: 7%;
+    /* width: 60%; */
+    /* height: auto; */
+    width: 300px;
+    height: 300px;
+    margin-top: 60px;
+    left: 14%;
     padding: 20px;
+    font-size: 0.7em;
   }
 
   .hidden-text {
@@ -493,8 +499,8 @@ html {
   }
 
   .comment-section {
-    top: 380%;
-    width: 130vw;
+    top: 300%;
+    width: 100%;
   }
 
   .comment-box {
@@ -513,7 +519,7 @@ html {
   }
   .description {
     width: 90vw;
-    margin-left: 3%;
+
     height: 100vh;
   }
 
@@ -523,8 +529,8 @@ html {
 
   .blog-button {
     width: 150px;
-    bottom: -280%;
-    left: 60%;
+    bottom: -205%;
+    left: 51%;
     transform: translateX(-50%);
   }
 
@@ -532,7 +538,8 @@ html {
     width: 300px;
     height: 150px;
     left: 15%;
-    top: 20vh;
+    top: 35vh;
+    margin-top: 20px;
     transform: translateX(-50%);
   }
 
@@ -544,7 +551,13 @@ html {
     left: 60%;
   }
 
-  .parallax-container {
-    overflow: hidden;
-  }
+  /* 
+  .demo {
+    position: absolute;
+    top: 40%;
+    left: 4%;
+    width: 100%;
+
+    z-index: 5;
+  } */
 }

@@ -100,7 +100,6 @@
   }
 }
 
-/* Animation for button interactions */
 .demo-card button {
   position: relative;
   overflow: hidden;
@@ -124,13 +123,11 @@
   height: 200%;
 }
 
-/* Smooth transitions */
 * {
   transition: background-color 0.3s ease, transform 0.3s ease,
     box-shadow 0.3s ease;
 }
 
-/* Focus states for accessibility */
 .demo-card button:focus {
   outline: 2px solid var(--accent-primary);
   outline-offset: 2px;
@@ -143,8 +140,9 @@
   .demo-section {
     padding: 1.5rem 1rem;
     height: auto;
-    top: 130vw;
+    top: 160vw;
     border-radius: 20px;
+    width: 300px;
   }
 
   .demo-section h2 {

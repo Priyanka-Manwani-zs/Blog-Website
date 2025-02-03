@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState, useCallback } from "react";
 import bg from "./assets/bg.jpg";
-import moon from "./assets/moon.png";
 import road from "./assets/road.png";
 import hook from "./assets/hook.png";
 import "./style.css";
